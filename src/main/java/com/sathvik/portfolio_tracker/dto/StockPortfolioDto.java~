@@ -1,0 +1,26 @@
+package com.sathvik.portfolio_tracker.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import java.math.BigDecimal;
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+public class StockPortfolioDto {
+
+    private String ticker;
+    private String stockName;
+    private double quantity;
+    private BigDecimal investedValue;
+
+    public StockPortfolioDto(String ticker, double quantity, BigDecimal investedValue) {
+        this.ticker = ticker;
+        this.quantity = quantity;
+        this.investedValue = investedValue;
+    }
+}

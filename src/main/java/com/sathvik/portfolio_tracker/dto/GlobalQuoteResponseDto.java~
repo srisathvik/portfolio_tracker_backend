@@ -1,0 +1,2 @@
+package com.sathvik.portfolio_tracker.dto;public class GlobalQuoteResponseDto {
+}
