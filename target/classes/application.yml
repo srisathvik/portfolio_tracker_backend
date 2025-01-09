@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: stock-portfolio-tracker
+
+
+  datasource:
+
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://portfolio-tracker-portfolotracker.b.aivencloud.com:11029/portfolio-tracker
+    username: avnadmin
+    
+
+  jpa:
+    #    show-sql: true
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.MySQL8Dialect
+
+server:
+  port: 8087
