@@ -3,5 +3,5 @@ COPY . .
 RUN mvn clean package -DskipTests
 
 FROM openjdk:17-jdk-slim
-COPY --from=build /app/target/portfolio-tracker-0.0.1-SNAPSHOT.jar portfolio-tracker-0.0.1-SNAPSHOT.jar
+COPY --from=build /target/portfolio-tracker-0.0.1-SNAPSHOT.jar portfolio-tracker-0.0.1-SNAPSHOT.jar
 ENTRYPOINT ["java", "-jar", "portfolio-tracker-0.0.1-SNAPSHOT.jar"]
